@@ -1,486 +1,542 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="bootstrap.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-<!-- navbar start -->
-<nav class="navbar navbar-expand-lg sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="#"> Ayesha's Portfolio</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">SERVICE</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">PROJECT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">CONTACT</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- navbar end -->
-
-<!-- hero section start -->
-<div class="container col-xxl-8 px-4 py-5">
-  <div class="row flex-lg-row-reverse align-items-center g-5">
-    <div class="col-10 col-sm-8 col-lg-6">
-      <img
-        src="images/bg.png"
-        class="d-block mx-lg-auto"
-        alt="Bootstrap Themes"
-        width="400"
-        height="400"
-        loading="lazy"
-        style="border-radius: 100%"
-      />
-    </div>
-    <div class="col-lg-6">
-      <p class="lead">Hello! Myself,</p>
-      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-        Ayesha Javed
-      </h1>
-      <h4>And I am a Frontend Developer.</h4>
-      <p class="lead">
-        I turn ideas into visually appealing and fully responsive websites using
-        modern web technologies.
-      </p>
-      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-          More About Me
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ayesha's Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">SERVICE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">PROJECT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-<!-- hero section end -->
+    </nav>
+    <!-- navbar end -->
 
-<!-- about me start -->
-<div class="px-4 py-5 my-5 text-center">
-  <h1 class="display-5 fw-bold text-body-emphasis">About Me</h1>
-  <h3 class="py-3">"Frontend Developer"</h3>
-  <div class="col-lg-9 mx-auto">
-    <p class="lead mb-4">
-      I am Ayesha Javed, a passionate Frontend Developer from Pakistan with a
-      strong interest in building modern, clean, and fully responsive websites.
-      I enjoy creating visually appealing and user-friendly interfaces using
-      HTML, CSS, Bootstrap, JavaScript, and modern frontend tools. I focus on
-      writing clean, well-structured code and ensuring smooth performance across
-      all devices and screen sizes. Currently, I am completing my Intermediate
-      education from Khatoon-e-Pakistan College. Along with my studies, I am
-      actively improving my frontend development skills by working on real-world
-      projects and continuously learning new technologies. I am highly
-      motivated, detail-oriented, and always eager to grow as a developer and
-      take on new challenges in the field of web development.
-    </p>
-  </div>
-</div>
-<!-- about me end -->
-
-<!-- services start -->
-<div class="text-center my-5">
-  <h1 class="display-5 fw-bold">My Services</h1>
-</div>
-<div class="container">
-  <div class="row g-4 justify-content-center">
-    <div class="col-md-5">
-      <div class="card h-100 text-center shadow rounded-4">
-        <div class="card-body d-flex flex-column align-items-center p-4">
+    <!-- hero section start -->
+    <div id="home" class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5">
+        <div class="col-10 col-sm-8 col-lg-6">
           <img
-            src="images/html.png"
-            class="mb-3"
-            style="width: 70px; height: 70px; object-fit: contain"
-            alt=""
+            src="images/bg.png"
+            class="d-block mx-lg-auto"
+            alt="Bootstrap Themes"
+            width="400"
+            height="400"
+            loading="lazy"
+            style="border-radius: 100%"
           />
-          <h5 class="card-title fw-semibold">HTML Development</h5>
-          <p class="card-text">
-            I create clean, semantic, and well-structured HTML code that forms a
-            strong foundation for modern websites. My focus is on accessibility,
-            SEO-friendly structure, and best coding practices.
+        </div>
+        <div class="col-lg-6">
+          <p class="lead">Hello! Myself,</p>
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            Ayesha Javed
+          </h1>
+          <h4>And I am a Frontend Developer.</h4>
+          <p class="lead">
+            I turn ideas into visually appealing and fully responsive websites
+            using modern web technologies.
           </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-5">
-      <div class="card h-100 text-center shadow rounded-4">
-        <div class="card-body d-flex flex-column align-items-center p-4">
-          <img
-            src="images/css.png"
-            class="mb-3"
-            style="width: 70px; height: 70px; object-fit: contain"
-            alt=""
-          />
-          <h5 class="card-title fw-semibold">CSS Styling & Design</h5>
-          <p class="card-text">
-            I design visually attractive, modern, and responsive layouts using
-            CSS. I ensure consistent styling, smooth animations, and perfect
-            responsiveness on all devices.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container my-4 py-5">
-  <div class="row g-4 justify-content-center">
-    <div class="col-md-5">
-      <div class="card h-100 text-center shadow rounded-4">
-        <div class="card-body d-flex flex-column align-items-center p-4">
-          <img
-            src="images/bootstrap.png"
-            class="mb-3"
-            style="width: 70px; height: 70px; object-fit: contain"
-            alt=""
-          />
-          <h5 class="card-title fw-semibold">Bootstrap Development</h5>
-          <p class="card-text">
-            I use Bootstrap to build fast, mobile-first, and fully responsive
-            websites with professional layouts and reusable components.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-5">
-      <div class="card h-100 text-center shadow rounded-4">
-        <div class="card-body d-flex flex-column align-items-center p-4">
-          <img
-            src="images/js.png"
-            class="mb-3"
-            style="width: 70px; height: 70px; object-fit: contain"
-            alt=""
-          />
-          <h5 class="card-title fw-semibold">JavaScript Functionality</h5>
-          <p class="card-text">
-            I add dynamic and interactive features using JavaScript to enhance
-            user experience, including form validation and UI interactions.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- services end -->
-
-<!-- project start -->
-<div class="text-center my-5">
-  <h1 class="display-5 fw-bold">My Projects</h1>
-</div>
-<div class="container my-4">
-  <div class="row g-4">
-    <div class="col-md-4">
-      <div class="card h-100">
-        <img src="images/nexcent.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h4 class="card-title">Nexcent Project:</h4>
-          <p class="card-text">
-            Nexcent is a modern and responsive website built with HTML, CSS, and
-            Bootstrap. It reflects a clean design approach, smooth layout, and
-            user-friendly interface for an improved web experience.
-          </p>
-        </div>
-        <div class="card-footer text-center">
-          <button type="button" class="btn btn-primary">View Project</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100">
-        <img src="images/logo.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h4 class="card-title">Figma Project:</h4>
-          <p class="card-text">
-            Built using HTML, CSS, and Bootstrap, this website combines
-            simplicity with modern design. Every section is carefully structured
-            to deliver a responsive and visually appealing experience.
-          </p>
-        </div>
-        <div class="card-footer text-center">
-          <button type="button" class="btn btn-primary">View Project</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100">
-        <img src="images/build.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h4 class="card-title">Real State Project:</h4>
-          <p class="card-text">
-            This project is created with HTML, CSS, and Bootstrap to ensure
-            responsiveness, consistency, and a professional web layout suitable
-            for all screen sizes.
-          </p>
-        </div>
-        <div class="card-footer text-center">
-          <button type="button" class="btn btn-primary">View Project</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container my-4">
-  <div class="row g-4">
-    <div class="col-md-4">
-      <div class="card h-100">
-        <img src="images/logopisum.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h4 class="card-title">Logopisum Project:</h4>
-          <p class="card-text">
-            Developed with HTML, CSS, and Bootstrap, this website follows modern
-            design principles to provide a smooth and responsive user
-            experience.
-          </p>
-        </div>
-        <div class="card-footer text-center">
-          <button type="button" class="btn btn-primary">View Project</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100">
-        <img src="images/bakery.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h4 class="card-title">Sweet Bakery Project:</h4>
-          <p class="card-text">
-            This website has been carefully developed using HTML, CSS, and
-            Bootstrap to deliver a responsive, visually balanced, and modern
-            user interface that works seamlessly across all devices.
-          </p>
-        </div>
-        <div class="card-footer text-center">
-          <button type="button" class="btn btn-primary">View Project</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100">
-        <img src="images/zarrin.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h4 class="card-title">AI Project:</h4>
-          <p class="card-text">
-            This project is built using HTML, CSS, and Bootstrap as part of a
-            front-end development practice, demonstrating responsive design,
-            layout structuring, and styling techniques.
-          </p>
-        </div>
-        <div class="card-footer text-center">
-          <button type="button" class="btn btn-primary">View Project</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container my-4">
-  <div class="row g-4">
-    <div class="col-md-4">
-      <div class="card h-100">
-        <img src="images/virtuzone.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h4 class="card-title">Virtuzone Project:</h4>
-          <p class="card-text">
-            This project is built using HTML, CSS, and Bootstrap as part of a
-            front-end development practice, demonstrating responsive design,
-            layout structuring, and styling techniques.
-          </p>
-        </div>
-        <div class="card-footer text-center">
-          <button type="button" class="btn btn-primary">View Project</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100">
-        <img src="images/kazim.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h4 class="card-title">Business Project:</h4>
-          <p class="card-text">
-            The website is developed using HTML for structure, CSS for styling,
-            and Bootstrap for responsiveness, ensuring consistency and
-            adaptability across different screen sizes
-          </p>
-        </div>
-        <div class="card-footer text-center">
-          <button type="button" class="btn btn-primary">View Project</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100">
-        <img src="images/Resume Maker.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h4 class="card-title">Resume Maker Project:</h4>
-          <p class="card-text">
-            Created using HTML, CSS, Bootstrap, and JavaScript, this website
-            emphasizes clarity, responsiveness, and interactive elements for a
-            professional modern layout
-          </p>
-        </div>
-        <div class="card-footer text-center">
-          <button type="button" class="btn btn-primary">View Project</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container my-4">
-  <div class="row g-4">
-    <div class="col-md-4">
-      <div class="card h-100">
-        <img src="images/E-commerce UI.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h4 class="card-title">E-commerce Project:</h4>
-          <p class="card-text">
-            Designed with HTML, CSS, Bootstrap, and JavaScript, this website
-            blends simplicity with interactive elements to create a smooth,
-            responsive, and engaging web experience
-          </p>
-        </div>
-        <div class="card-footer text-center">
-          <button type="button" class="btn btn-primary">View Project</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100">
-        <img src="images/calculator.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h4 class="card-title">Calculator Project:</h4>
-          <p class="card-text">
-            This project is created using HTML, CSS, Bootstrap, and JavaScript,
-            demonstrating responsive design, interactive features, and front-end
-            development skills.
-          </p>
-        </div>
-        <div class="card-footer text-center">
-          <button type="button" class="btn btn-primary">View Project</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100">
-        <img src="images/todo.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h4 class="card-title">Todo Project:</h4>
-          <p class="card-text">
-            This website is developed using HTML, CSS, Bootstrap, and JavaScript
-            to deliver a modern, responsive, and interactive user interface that
-            works seamlessly across all devices.
-          </p>
-        </div>
-        <div class="card-footer text-center">
-          <button type="button" class="btn btn-primary">View Project</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- project end -->
-
-<!-- contact start -->
-<section id="contact " class="py-5 mt-5">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h1 class="fw-bold">Contact Me</h1>
-      <p>Get in touch with me for projects or collaboration</p>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-md-4">
-        <div class="card shadow rounded-4 p-4 h-60 text-start">
-          <h2 class="fw-bold mb-3">Contact Info</h2>
-          <h5>Email:</h5>
-          <p><i class="fas fa-envelope me-2"></i>aishajawaid483@gmail.com</p>
-          <h5>Phone no:</h5>
-          <p><i class="fas fa-phone me-2"></i>+92 3321546138</p>
-          <h5>Country/City:</h5>
-          <p><i class="fas fa-map-marker-alt me-2"></i>Pakistan, Karachi.</p>
-          <h5>GitHub:</h5>
-          <p><i class="fas fa-map-marker-alt me-2"></i>AyeshaJaved151</p>
-          <h5>LinkedIn:</h5>
-          <p><i class="fas fa-map-marker-alt me-2"></i>Ayesha Javed</p>
-        </div>
-      </div>
-      <div class="col-md-6 mb-4">
-        <div class="card shadow rounded-4 p-4">
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label fw-semibold">Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                placeholder="Your Name"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label fw-semibold">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="Your Email"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label fw-semibold"
-                >Message</label
-              >
-              <textarea
-                class="form-control"
-                id="message"
-                rows="5"
-                placeholder="Your Message"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">
-              Send Message
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+              More About Me
             </button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- contact end -->
+    <!-- hero section end -->
 
-<!-- footer start -->
-<footer class="py-3 my-4">
-  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-    Frontend Developer
-  </ul>
-  <p class="text-center">© 2026 Ayesha Javed. All rights reserved</p>
-</footer>
-<!-- footer end -->
+    <!-- about me start -->
+    <div id="about" class="px-4 py-5 my-5 text-center">
+      <h1 class="display-5 fw-bold text-body-emphasis">About Me</h1>
+      <h3 class="py-3">"Frontend Developer"</h3>
+      <div class="col-lg-9 mx-auto">
+        <p class="lead mb-4">
+          I am Ayesha Javed, a passionate Frontend Developer from Pakistan with
+          a strong interest in building modern, clean, and fully responsive
+          websites. I enjoy creating visually appealing and user-friendly
+          interfaces using HTML, CSS, Bootstrap, JavaScript, and modern frontend
+          tools. I focus on writing clean, well-structured code and ensuring
+          smooth performance across all devices and screen sizes. Currently, I
+          am completing my Intermediate education from Khatoon-e-Pakistan
+          College. Along with my studies, I am actively improving my frontend
+          development skills by working on real-world projects and continuously
+          learning new technologies. I am highly motivated, detail-oriented, and
+          always eager to grow as a developer and take on new challenges in the
+          field of web development.
+        </p>
+      </div>
+    </div>
+    <!-- about me end -->
 
+    <!-- services start -->
+    <div id="services" class="text-center my-5">
+      <h1 class="display-5 fw-bold">My Services</h1>
+    </div>
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-5">
+          <div class="card h-100 text-center shadow rounded-4">
+            <div class="card-body d-flex flex-column align-items-center p-4">
+              <img
+                src="images/html.png"
+                class="mb-3"
+                style="width: 70px; height: 70px; object-fit: contain"
+                alt=""
+              />
+              <h5 class="card-title fw-semibold">HTML Development</h5>
+              <p class="card-text">
+                I create clean, semantic, and well-structured HTML code that
+                forms a strong foundation for modern websites. My focus is on
+                accessibility, SEO-friendly structure, and best coding
+                practices.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card h-100 text-center shadow rounded-4">
+            <div class="card-body d-flex flex-column align-items-center p-4">
+              <img
+                src="images/css.png"
+                class="mb-3"
+                style="width: 70px; height: 70px; object-fit: contain"
+                alt=""
+              />
+              <h5 class="card-title fw-semibold">CSS Styling & Design</h5>
+              <p class="card-text">
+                I design visually attractive, modern, and responsive layouts
+                using CSS. I ensure consistent styling, smooth animations, and
+                perfect responsiveness on all devices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-4 py-5">
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-5">
+          <div class="card h-100 text-center shadow rounded-4">
+            <div class="card-body d-flex flex-column align-items-center p-4">
+              <img
+                src="images/bootstrap.png"
+                class="mb-3"
+                style="width: 70px; height: 70px; object-fit: contain"
+                alt=""
+              />
+              <h5 class="card-title fw-semibold">Bootstrap Development</h5>
+              <p class="card-text">
+                I use Bootstrap to build fast, mobile-first, and fully
+                responsive websites with professional layouts and reusable
+                components.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card h-100 text-center shadow rounded-4">
+            <div class="card-body d-flex flex-column align-items-center p-4">
+              <img
+                src="images/js.png"
+                class="mb-3"
+                style="width: 70px; height: 70px; object-fit: contain"
+                alt=""
+              />
+              <h5 class="card-title fw-semibold">JavaScript Functionality</h5>
+              <p class="card-text">
+                I add dynamic and interactive features using JavaScript to
+                enhance user experience, including form validation and UI
+                interactions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services end -->
 
-<script src="bootstrap.js"></script>
-  <script src="app.js"></script>
-</body>
+    <!-- project start -->
+    <div id="projects" class="text-center my-5">
+      <h1 class="display-5 fw-bold">My Projects</h1>
+    </div>
+    <div class="container my-4">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="images/nexcent.png"
+              class="card-img-top"
+              alt="CSS Assignment 4"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Nexcent Project:</h4>
+              <p class="card-text">
+                Nexcent is a modern and responsive website built with HTML, CSS,
+                and Bootstrap. It reflects a clean design approach, smooth
+                layout, and user-friendly interface for an improved web
+                experience.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <button type="button" class="btn btn-primary project-btn">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="images/logo.png"
+              class="card-img-top"
+              alt="CSS Assignment 7"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Figma Project:</h4>
+              <p class="card-text">
+                Built using HTML, CSS, and Bootstrap, this website combines
+                simplicity with modern design. Every section is carefully
+                structured to deliver a responsive and visually appealing
+                experience.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <button type="button" class="btn btn-primary project-btn">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="images/build.png"
+              class="card-img-top"
+              alt="CSS Assignment 3"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Real State Project:</h4>
+              <p class="card-text">
+                This project is created with HTML, CSS, and Bootstrap to ensure
+                responsiveness, consistency, and a professional web layout
+                suitable for all screen sizes.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <button type="button" class="btn btn-primary project-btn">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-4">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="images/logopisum.png"
+              class="card-img-top"
+              alt="CSS Assignment 5"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Logopisum Project:</h4>
+              <p class="card-text">
+                Developed with HTML, CSS, and Bootstrap, this website follows
+                modern design principles to provide a smooth and responsive user
+                experience.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <button type="button" class="btn btn-primary project-btn">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="images/bakery.png"
+              class="card-img-top"
+              alt="CSS Assignment 6"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Sweet Bakery Project:</h4>
+              <p class="card-text">
+                This website has been carefully developed using HTML, CSS, and
+                Bootstrap to deliver a responsive, visually balanced, and modern
+                user interface that works seamlessly across all devices.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <button type="button" class="btn btn-primary project-btn">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="images/zarrin.png" class="card-img-top" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">AI Project:</h4>
+              <p class="card-text">
+                This project is built using HTML, CSS, and Bootstrap as part of
+                a front-end development practice, demonstrating responsive
+                design, layout structuring, and styling techniques.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <button type="button" class="btn btn-primary project-btn">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-4">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="images/virtuzone.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h4 class="card-title">Virtuzone Project:</h4>
+              <p class="card-text">
+                This project is built using HTML, CSS, and Bootstrap as part of
+                a front-end development practice, demonstrating responsive
+                design, layout structuring, and styling techniques.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <button type="button" class="btn btn-primary project-btn">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="images/kazim.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h4 class="card-title">Business Project:</h4>
+              <p class="card-text">
+                The website is developed using HTML for structure, CSS for
+                styling, and Bootstrap for responsiveness, ensuring consistency
+                and adaptability across different screen sizes
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <button type="button" class="btn btn-primary project-btn">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="images/Resume Maker.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h4 class="card-title">Resume Maker Project:</h4>
+              <p class="card-text">
+                Created using HTML, CSS, Bootstrap, and JavaScript, this website
+                emphasizes clarity, responsiveness, and interactive elements for
+                a professional modern layout
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <button type="button" class="btn btn-primary project-btn">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-4">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="images/E-commerce UI.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h4 class="card-title">E-commerce Project:</h4>
+              <p class="card-text">
+                Designed with HTML, CSS, Bootstrap, and JavaScript, this website
+                blends simplicity with interactive elements to create a smooth,
+                responsive, and engaging web experience
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <button type="button" class="btn btn-primary project-btn">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="images/calculator.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h4 class="card-title">Calculator Project:</h4>
+              <p class="card-text">
+                This project is created using HTML, CSS, Bootstrap, and
+                JavaScript, demonstrating responsive design, interactive
+                features, and front-end development skills.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <button type="button" class="btn btn-primary project-btn">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="images/todo.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h4 class="card-title">Todo Project:</h4>
+              <p class="card-text">
+                This website is developed using HTML, CSS, Bootstrap, and
+                JavaScript to deliver a modern, responsive, and interactive user
+                interface that works seamlessly across all devices.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <button type="button" class="btn btn-primary project-btn">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- project end -->
+
+    <!-- contact start -->
+    <section id="contact" class="py-5 mt-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h1 class="fw-bold">Contact Me</h1>
+          <p>Get in touch with me for projects or collaboration</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="card shadow rounded-4 p-4 h-60 text-start">
+              <h2 class="fw-bold mb-3">Contact Info</h2>
+              <h5>Email:</h5>
+              <p>
+                <i class="fas fa-envelope me-2"></i>aishajawaid483@gmail.com
+              </p>
+              <h5>Phone no:</h5>
+              <p><i class="fas fa-phone me-2"></i>+92 3321546138</p>
+              <h5>Country/City:</h5>
+              <p>
+                <i class="fas fa-map-marker-alt me-2"></i>Pakistan, Karachi.
+              </p>
+              <h5>GitHub:</h5>
+              <p><i class="fas fa-map-marker-alt me-2"></i>AyeshaJaved151</p>
+              <h5>LinkedIn:</h5>
+              <p><i class="fas fa-map-marker-alt me-2"></i>Ayesha Javed</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card shadow rounded-4 p-4">
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label fw-semibold">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label fw-semibold"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label fw-semibold"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        Frontend Developer
+      </ul>
+      <p class="text-center">© 2026 Ayesha Javed. All rights reserved</p>
+    </footer>
+    <!-- footer end -->
+
+    <script src="bootstrap.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
