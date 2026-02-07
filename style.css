@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #5c537e; /* Vibrant purple */
+    --secondary-color: #f5f4ff; /* Light background */
+    --accent-color: #c084fc; /* Gradient accent */
+    --text-color: #333333;
+    --text-light: #ffffff;
+    --card-bg: #ffffff;
+    --btn-hover: #7a5fc9;
+    --shadow-color: rgba(0, 0, 0, 0.15);
+    --input-bg: #f9f8ff;
+    --footer-bg: #7b5cf0;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    box-shadow: 0 8px 20px var(--shadow-color);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    color: var(--text-light) !important;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffffffcc !important;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.lead {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.display-5 {
+    color: var(--primary-color);
+    font-weight: 700;
+    animation: fadeInUp 1s ease forwards;
+}
+
+h4 {
+    color: #555;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.2s ease forwards;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px var(--shadow-color);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, var(--accent-color), var(--primary-color));
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px var(--shadow-color);
+}
+
+/* About Me Section */
+.text-center h1, .text-center h3 {
+    color: var(--primary-color);
+    animation: fadeIn 1s ease forwards;
+}
+
+.text-center p.lead {
+    color: var(--text-color);
+}
+
+/* Services Section */
+.card {
+    background-color: var(--card-bg);
+    border: none;
+    box-shadow: 0 8px 20px var(--shadow-color);
+    border-radius: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-15px) rotateX(3deg);
+    box-shadow: 0 20px 30px var(--shadow-color);
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.card-text {
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.card img {
+    transition: transform 0.4s ease;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+/* Projects Section */
+.card-footer .btn {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.card-footer .btn:hover {
+    background: linear-gradient(45deg, var(--accent-color), var(--primary-color));
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px var(--shadow-color);
+}
+
+/* Contact Section */
+#contact {
+    background: #f8f7ff;
+}
+
+#contact h1, #contact p {
+    color: var(--primary-color);
+}
+
+.card.shadow {
+    background-color: var(--card-bg);
+    box-shadow: 0 12px 30px var(--shadow-color);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.shadow:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 35px var(--shadow-color);
+}
+
+.form-control {
+    border-radius: 12px;
+    background-color: var(--input-bg);
+    border: 1px solid #ddd;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 12px rgba(123, 92, 240, 0.3);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    color: var(--text-light);
+    padding: 25px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeInUp {
+    0% {opacity: 0; transform: translateY(20px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+.text-body-emphasis {
+    color: var(--text-color);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+    .display-5 {
+        font-size: 2rem;
+    }
+    .btn-lg {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
