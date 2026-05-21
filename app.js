@@ -28,3 +28,7 @@ document.querySelectorAll(".project-btn").forEach((btn, index) => {
     window.open(projectLinks[index], "_blank"); 
   });
 });
+
+function openResume() {
+  window.open("images/CV.jpeg", "_blank");
+}
