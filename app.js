@@ -9,23 +9,23 @@ document.querySelectorAll(".navbar a.nav-link").forEach((link) => {
 });
 
 const projectLinks = [
+  "https://ayeshajaved151.github.io/Femhack-2026/",
+  "https://ayeshajaved151.github.io/TODO/",
+  "https://ayeshajaved151.github.io/calculator/",
+  "https://ayeshajaved151.github.io/E-commerce-UI/",
+  "https://ayeshajaved151.github.io/Home-Page-1/",
+  "https://ayeshajaved151.github.io/Home-Page-2/",
+  "https://ayeshajaved151.github.io/css-assignment-6/",
+  "https://ayeshajaved151.github.io/hackathon",
+  "https://ayeshajaved151.github.io/css-assignment-5/",
   "https://ayeshajaved151.github.io/css-assignment-4/",
   "https://ayeshajaved151.github.io/css-assignment-7/",
   "https://ayeshajaved151.github.io/css-assignment-3/",
-  "https://ayeshajaved151.github.io/css-assignment-5/",
-  "https://ayeshajaved151.github.io/css-assignment-6/",
-  "https://ayeshajaved151.github.io/hackathon",
-  "https://ayeshajaved151.github.io/Home-Page-1/",
-  "https://ayeshajaved151.github.io/Home-Page-2/",
-  "https://ayeshajaved151.github.io/Femhack-2026/",
-  "https://ayeshajaved151.github.io/E-commerce-UI/",
-  "https://ayeshajaved151.github.io/calculator/",
-  "https://ayeshajaved151.github.io/TODO/",
 ];
 
 document.querySelectorAll(".project-btn").forEach((btn, index) => {
   btn.addEventListener("click", () => {
-    window.open(projectLinks[index], "_blank"); 
+    window.open(projectLinks[index], "_blank");
   });
 });
 
