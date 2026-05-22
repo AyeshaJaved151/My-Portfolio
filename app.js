@@ -32,3 +32,16 @@ document.querySelectorAll(".project-btn").forEach((btn, index) => {
 function openResume() {
   window.open("images/CV.jpeg", "_blank");
 }
+
+const certificateLinks = [
+  "images/html certificate.png",
+  "images/css certificate.png",
+  "images/javascript certificate.png",
+  "images/cyber security certificate.png",
+];
+
+document.querySelectorAll(".certificate-btn").forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    window.open(certificateLinks[index], "_blank");
+  });
+});

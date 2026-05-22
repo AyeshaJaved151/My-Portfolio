@@ -130,6 +130,35 @@ h4 {
   transform: scale(1.1);
 }
 
+/* Certificates Section */
+#certificates h1 {
+  color: var(--primary-color);
+}
+
+#certificates .lead {
+  color: #555;
+}
+
+.certificate-btn {
+  width: 100%;
+}
+
+#certificates .card {
+  overflow: hidden;
+}
+
+#certificates .card:hover {
+  transform: translateY(-12px);
+}
+
+#certificates img {
+  transition: transform 0.4s ease;
+}
+
+#certificates img:hover {
+  transform: scale(1.1);
+}
+
 /* Projects Section */
 .card-footer .btn {
   background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
