@@ -45,3 +45,20 @@ document.querySelectorAll(".certificate-btn").forEach((btn, index) => {
     window.open(certificateLinks[index], "_blank");
   });
 });
+
+const reveals = document.querySelectorAll(".reveal");
+
+function showOnScroll() {
+  const windowHeight = window.innerHeight;
+
+  reveals.forEach((el) => {
+    const top = el.getBoundingClientRect().top;
+
+    if (top < windowHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", showOnScroll);
+showOnScroll();

@@ -283,3 +283,23 @@ img:hover {
     margin-bottom: 20px;
   }
 }
+
+/* ===== Scroll Reveal Animation ===== */
+
+.reveal {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: all 1s ease;
+  will-change: transform, opacity;
+}
+
+/* left side */
+.reveal.left {
+  transform: translateX(-80px);
+}
+
+/* active state */
+.reveal.active {
+  opacity: 1;
+  transform: translateX(0);
+}
