@@ -283,7 +283,6 @@ img:hover {
     font-size: 1rem;
   }
 
-  /* Contact cards gap on mobile */
   #contact .card {
     margin-bottom: 20px;
   }
@@ -307,4 +306,43 @@ img:hover {
 .reveal.active {
   opacity: 1;
   transform: translateX(0);
+}
+
+#services .row {
+  row-gap: 24px;
+  column-gap: 0;
+  justify-content: center;
+}
+
+#services .card {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Tablet view */
+@media (max-width: 992px) {
+  #services .col-md-5 {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  #services .col-md-5 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+#contact .row {
+  row-gap: 24px;
+}
+
+@media (max-width: 768px) {
+  #contact .col-md-4,
+  #contact .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
