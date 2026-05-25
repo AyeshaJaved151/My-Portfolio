@@ -6,6 +6,7 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="bootstrap.css" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -515,58 +516,53 @@
   <!-- contact start -->
   <section id="contact" class="py-5 mt-5 reveal left">
     <div class="container reveal left">
-      <div class="text-center mb-5  reveal left">
+      <div class="text-center mb-5">
         <h1 class="fw-bold">Contact Me</h1>
         <p>Get in touch with me for projects or collaboration</p>
       </div>
-      <div class="row justify-content-center  reveal left">
+      <div class="row justify-content-center">
+        <!-- Contact Info -->
         <div class="col-md-4">
-          <div class="card shadow rounded-4 p-4 h-60 text-start">
+          <div class="card shadow rounded-4 p-4 h-100 text-start">
             <h2 class="fw-bold mb-3">Contact Info</h2>
-            <h5>Email:</h5>
+            <h5><i class="fa-solid fa-envelope me-2"></i> Email:</h5>
+            <p>aishajawaid483@gmail.com</p>
+            <h5><i class="fa-solid fa-phone me-2"></i> Phone No:</h5>
+            <p>+92 3321546138</p>
+            <h5><i class="fa-solid fa-location-dot me-2"></i> Country/City:</h5>
+            <p>Pakistan, Karachi</p>
+            <h5><i class="fa-brands fa-github me-2"></i> GitHub:</h5>
             <p>
-              <i class="fas fa-envelope me-2"></i>aishajawaid483@gmail.com
-            </p>
-            <h5>Phone no:</h5>
-            <p><i class="fas fa-phone me-2"></i>+92 3321546138</p>
-            <h5>Country/City:</h5>
-            <p>
-              <i class="fas fa-map-marker-alt me-2"></i>Pakistan, Karachi.
-            </p>
-            <h5>GitHub:</h5>
-            <p>
-              <i class="fas fa-map-marker-alt me-2"></i>
               <a href="https://github.com/AyeshaJaved151" target="_blank">
                 AyeshaJaved151
               </a>
             </p>
-            <h5>LinkedIn:</h5>
+            <h5><i class="fa-brands fa-linkedin me-2"></i> LinkedIn:</h5>
             <p>
-              <i class="fas fa-map-marker-alt me-2"></i>
               <a href="https://www.linkedin.com/in/ayesha-javed-ab5908366/" target="_blank">
                 Ayesha Javed
               </a>
             </p>
           </div>
         </div>
-        <div class="col-md-6 mb-4 reveal left">
-          <div class="card shadow rounded-4 p-4">
+
+        <!-- Form -->
+        <div class="col-md-6">
+          <div class="card shadow rounded-4 p-4 h-100">
             <form>
               <div class="mb-3">
-                <label for="name" class="form-label fw-semibold">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Your Name" required />
+                <label class="form-label fw-semibold">Name</label>
+                <input type="text" class="form-control" placeholder="Your Name">
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label fw-semibold">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Your Email" required />
+                <label class="form-label fw-semibold">Email</label>
+                <input type="email" class="form-control" placeholder="Your Email">
               </div>
               <div class="mb-3">
-                <label for="message" class="form-label fw-semibold">Message</label>
-                <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                <label class="form-label fw-semibold">Message</label>
+                <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary w-100">
-                Send Message
-              </button>
+              <button class="btn btn-primary w-100">Send Message</button>
             </form>
           </div>
         </div>

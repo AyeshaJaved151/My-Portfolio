@@ -179,7 +179,12 @@ h4 {
 }
 
 #contact h1,
-#contact p {
+#contact h2,
+#contact h5,
+#contact p,
+#contact label,
+#contact i,
+#contact a {
   color: var(--primary-color);
 }
 
