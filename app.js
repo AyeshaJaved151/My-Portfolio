@@ -62,3 +62,55 @@ function showOnScroll() {
 
 window.addEventListener("scroll", showOnScroll);
 showOnScroll();
+
+// Welcome Alert (html and css are code is also here)
+window.addEventListener("load", () => {
+  Swal.fire({
+    title: "👋 Welcome!",
+    html: `
+      <h2>Welcome to Ayesha's Portfolio!</h2>
+      <p style="font-size:16px; line-height:1.8;">
+        I'm glad you're here. 
+        <br><br>
+        Feel free to explore my work and projects. 
+      </p>
+    `,
+    icon: "success",
+    confirmButtonText: "Explore Portfolio 🌟",
+    confirmButtonColor: "#c88d94",
+    allowOutsideClick: false
+  });
+});
+
+// Thank You Alert 
+let thankYouShown = false;
+
+document.addEventListener("mouseleave", (e) => {
+  if (e.clientY <= 0 && !thankYouShown) {
+    thankYouShown = true;
+
+    Swal.fire({
+      title: "❤️ Thank You!",
+      html: `
+        <h2>Thanks for Visiting My Portfolio!</h2>
+        <p style="font-size:16px; line-height:1.8;">
+          Your time and interest mean a lot to me.<br><br>
+          I hope you enjoyed exploring my projects,
+          skills, and achievements.
+          <br><br>
+        </p>
+      `,
+      icon: "success",
+      confirmButtonText: "See You Again 👋",
+      confirmButtonColor: "#c88d94",
+      allowOutsideClick: false
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.close();
+        setTimeout(() => {
+          window.location.href = "about:blank";
+        }, 300);
+      }
+    });
+  }
+});

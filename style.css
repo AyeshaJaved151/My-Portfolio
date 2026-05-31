@@ -342,6 +342,17 @@ img:hover {
   transform: translateX(-80px);
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* active state */
 .reveal.active {
   opacity: 1;
