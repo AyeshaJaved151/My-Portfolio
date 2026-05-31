@@ -115,39 +115,23 @@ window.addEventListener("load", () => {
 //   }
 // });
 
-
 let thankYouShown = false;
 
-/* ---------------------------
-   DESKTOP: Mouse Leave (Exit intent)
-----------------------------*/
 document.addEventListener("mouseleave", (e) => {
   if (e.clientY <= 0 && !thankYouShown) {
     showThankYouAlert();
   }
 });
 
-
-/* ---------------------------
-   MOBILE / TABLET: Back Button Detect
-----------------------------*/
-
-// Fake history state add karte hain
 history.pushState(null, null, location.href);
 
 window.addEventListener("popstate", function () {
   if (!thankYouShown) {
     showThankYouAlert();
-
-    // user ko same page par rokne ke liye
     history.pushState(null, null, location.href);
   }
 });
 
-
-/* ---------------------------
-   Sweet Alert Function
-----------------------------*/
 function showThankYouAlert() {
   thankYouShown = true;
 
@@ -155,27 +139,51 @@ function showThankYouAlert() {
     title: "❤️ Thank You!",
     html: `
       <h2>Thanks for Visiting My Portfolio!</h2>
-      <p style="font-size:16px; line-height:1.8;">
-        Your time and interest mean a lot to me.<br><br>
-        I hope you enjoyed exploring my projects,
-        skills, and achievements.
-      </p>
+        <p style="font-size:16px; line-height:1.8;">
+          Your time and interest mean a lot to me.<br><br>
+          I hope you enjoyed exploring my projects,
+          skills, and achievements.
+          <br><br>
+        </p>
     `,
     icon: "success",
     confirmButtonText: "See You Again 👋",
     confirmButtonColor: "#c88d94",
     allowOutsideClick: false
-  }).then((result) => {
-    if (result.isConfirmed) {
-
-      // Try to close tab (works only if opened via JS window.open)
-      window.open("", "_self");
-      window.close();
-
-      // fallback for all browsers
-      setTimeout(() => {
-        window.location.href = "about:blank";
-      }, 300);
-    }
+  }).then(() => {
+    closeWebsiteEffect();
   });
 }
+
+function closeWebsiteEffect() {
+  document.body.innerHTML = "";
+
+  document.body.style.margin = "0";
+  document.body.style.height = "100vh";
+  document.body.style.display = "flex";
+  document.body.style.justifyContent = "center";
+  document.body.style.alignItems = "center";
+  document.body.style.background = "#111";
+
+  const box = document.createElement("div");
+  box.style.textAlign = "center";
+  box.style.color = "white";
+  box.style.fontFamily = "sans-serif";
+  box.style.animation = "fadeIn 1s ease";
+
+  box.innerHTML = `
+    <h1>👋 Website Closed</h1>
+    <p>Thanks for visiting ❤️</p>
+  `;
+
+  document.body.appendChild(box);
+}
+
+const style = document.createElement("style");
+style.innerHTML = `
+@keyframes fadeIn {
+  from {opacity:0; transform: scale(0.9);}
+  to {opacity:1; transform: scale(1);}
+}
+`;
+document.head.appendChild(style);
