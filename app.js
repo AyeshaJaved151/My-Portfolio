@@ -82,35 +82,100 @@ window.addEventListener("load", () => {
   });
 });
 
-// Thank You Alert 
+// // Thank You Alert 
+// let thankYouShown = false;
+
+// document.addEventListener("mouseleave", (e) => {
+//   if (e.clientY <= 0 && !thankYouShown) {
+//     thankYouShown = true;
+
+//     Swal.fire({
+//       title: "❤️ Thank You!",
+//       html: `
+//         <h2>Thanks for Visiting My Portfolio!</h2>
+//         <p style="font-size:16px; line-height:1.8;">
+//           Your time and interest mean a lot to me.<br><br>
+//           I hope you enjoyed exploring my projects,
+//           skills, and achievements.
+//           <br><br>
+//         </p>
+//       `,
+//       icon: "success",
+//       confirmButtonText: "See You Again 👋",
+//       confirmButtonColor: "#c88d94",
+//       allowOutsideClick: false
+//     }).then((result) => {
+//       if (result.isConfirmed) {
+//         window.close();
+//         setTimeout(() => {
+//           window.location.href = "about:blank";
+//         }, 300);
+//       }
+//     });
+//   }
+// });
+
+
 let thankYouShown = false;
 
+/* ---------------------------
+   DESKTOP: Mouse Leave (Exit intent)
+----------------------------*/
 document.addEventListener("mouseleave", (e) => {
   if (e.clientY <= 0 && !thankYouShown) {
-    thankYouShown = true;
-
-    Swal.fire({
-      title: "❤️ Thank You!",
-      html: `
-        <h2>Thanks for Visiting My Portfolio!</h2>
-        <p style="font-size:16px; line-height:1.8;">
-          Your time and interest mean a lot to me.<br><br>
-          I hope you enjoyed exploring my projects,
-          skills, and achievements.
-          <br><br>
-        </p>
-      `,
-      icon: "success",
-      confirmButtonText: "See You Again 👋",
-      confirmButtonColor: "#c88d94",
-      allowOutsideClick: false
-    }).then((result) => {
-      if (result.isConfirmed) {
-        window.close();
-        setTimeout(() => {
-          window.location.href = "about:blank";
-        }, 300);
-      }
-    });
+    showThankYouAlert();
   }
 });
+
+
+/* ---------------------------
+   MOBILE / TABLET: Back Button Detect
+----------------------------*/
+
+// Fake history state add karte hain
+history.pushState(null, null, location.href);
+
+window.addEventListener("popstate", function () {
+  if (!thankYouShown) {
+    showThankYouAlert();
+
+    // user ko same page par rokne ke liye
+    history.pushState(null, null, location.href);
+  }
+});
+
+
+/* ---------------------------
+   Sweet Alert Function
+----------------------------*/
+function showThankYouAlert() {
+  thankYouShown = true;
+
+  Swal.fire({
+    title: "❤️ Thank You!",
+    html: `
+      <h2>Thanks for Visiting My Portfolio!</h2>
+      <p style="font-size:16px; line-height:1.8;">
+        Your time and interest mean a lot to me.<br><br>
+        I hope you enjoyed exploring my projects,
+        skills, and achievements.
+      </p>
+    `,
+    icon: "success",
+    confirmButtonText: "See You Again 👋",
+    confirmButtonColor: "#c88d94",
+    allowOutsideClick: false
+  }).then((result) => {
+    if (result.isConfirmed) {
+
+      // Try to close tab (works only if opened via JS window.open)
+      window.open("", "_self");
+      window.close();
+
+      // fallback for all browsers
+      setTimeout(() => {
+        window.location.href = "about:blank";
+      }, 300);
+    }
+  });
+}
