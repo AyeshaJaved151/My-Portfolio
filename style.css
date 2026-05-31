@@ -79,13 +79,7 @@ h4 {
 }
 
 .btn-primary {
-  background: linear-gradient(
-    45deg,
-    #887191,
-    #987892,
-    #b88694,
-    #c88d94
-  );
+  background: linear-gradient(45deg, #887191, #987892, #b88694, #c88d94);
   border: none;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -93,13 +87,7 @@ h4 {
 }
 
 .btn-primary:hover {
-  background: linear-gradient(
-    45deg,
-    #c88d94,
-    #b88694,
-    #987892,
-    #887191
-  );
+  background: linear-gradient(45deg, #c88d94, #b88694, #987892, #887191);
   transform: translateY(-3px);
   box-shadow: 0 18px 40px var(--shadow-color);
 }
@@ -180,26 +168,14 @@ h4 {
 
 /* Projects Section */
 .card-footer .btn {
-  background: linear-gradient(
-    45deg,
-    #887191,
-    #987892,
-    #b88694,
-    #c88d94
-  );
+  background: linear-gradient(45deg, #887191, #987892, #b88694, #c88d94);
   border: none;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .card-footer .btn:hover {
-  background: linear-gradient(
-    45deg,
-    #c88d94,
-    #b88694,
-    #987892,
-    #887191
-  );
+  background: linear-gradient(45deg, #c88d94, #b88694, #987892, #887191);
   transform: translateY(-3px);
   box-shadow: 0 18px 38px var(--shadow-color);
 }
@@ -328,19 +304,7 @@ img:hover {
   }
 }
 
-/* ===== Scroll Reveal Animation ===== */
-
-.reveal {
-  opacity: 0;
-  transform: translateX(80px);
-  transition: all 1s ease;
-  will-change: transform, opacity;
-}
-
-/* left side */
-.reveal.left {
-  transform: translateX(-80px);
-}
+/*Scroll Reveal Animation*/
 
 .reveal {
   opacity: 0;
@@ -351,12 +315,6 @@ img:hover {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
-} 
-
-/* active state */
-.reveal.active {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 #services .row {

@@ -78,43 +78,11 @@ window.addEventListener("load", () => {
     icon: "success",
     confirmButtonText: "Explore Portfolio 🌟",
     confirmButtonColor: "#c88d94",
-    allowOutsideClick: false
+    allowOutsideClick: false,
   });
 });
 
-// // Thank You Alert 
-// let thankYouShown = false;
-
-// document.addEventListener("mouseleave", (e) => {
-//   if (e.clientY <= 0 && !thankYouShown) {
-//     thankYouShown = true;
-
-//     Swal.fire({
-//       title: "❤️ Thank You!",
-//       html: `
-//         <h2>Thanks for Visiting My Portfolio!</h2>
-//         <p style="font-size:16px; line-height:1.8;">
-//           Your time and interest mean a lot to me.<br><br>
-//           I hope you enjoyed exploring my projects,
-//           skills, and achievements.
-//           <br><br>
-//         </p>
-//       `,
-//       icon: "success",
-//       confirmButtonText: "See You Again 👋",
-//       confirmButtonColor: "#c88d94",
-//       allowOutsideClick: false
-//     }).then((result) => {
-//       if (result.isConfirmed) {
-//         window.close();
-//         setTimeout(() => {
-//           window.location.href = "about:blank";
-//         }, 300);
-//       }
-//     });
-//   }
-// });
-
+// Thanks Alert
 let thankYouShown = false;
 
 document.addEventListener("mouseleave", (e) => {
@@ -149,7 +117,7 @@ function showThankYouAlert() {
     icon: "success",
     confirmButtonText: "See You Again 👋",
     confirmButtonColor: "#c88d94",
-    allowOutsideClick: false
+    allowOutsideClick: false,
   }).then(() => {
     closeWebsiteEffect();
   });
